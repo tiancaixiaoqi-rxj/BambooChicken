@@ -1,0 +1,113 @@
+<!--pages/tab1/tab1.wxml-->
+
+<view class="swiper-container"><!-- 标题轮播图等 -->
+  <swiper indicator-dots='true' autoplay='true' interval='4000' duration='1000' circular='true' class="swip">
+		<swiper-item>
+        <image mode='widthFix' src="/images/delete/0.png"  ></image>
+      </swiper-item>
+		  <swiper-item>
+        <image  class="small-image" src="/images/delete/1.jpg" ></image>
+      </swiper-item>
+      <swiper-item>
+        <image  src="/images/delete/2.jpg"  ></image>
+      </swiper-item>
+			<swiper-item>
+        <image src="/images/delete/3.jpg"  ></image>
+      </swiper-item>
+			<swiper-item>
+        <image mode='widthFix' src="/images/delete/4.png"  ></image>
+      </swiper-item>
+  </swiper>
+</view>
+
+<!--用户信息展示-->
+
+<view class="user-profile">
+  <!-- Header Section -->
+  <view class="profile-header">
+    <view class="avatar-container">
+			<image wx:if="{{!nickName||!login}}" class="avatar" src="../../images/common/touxiang.png"></image>
+      <image wx:if="{{nickName&&login}}" class="avatar" src="{{avatarUrl}}" mode="aspectFill"></image>
+    </view>
+    <view class="user-info">
+			<text wx:if="{{!nickName||!login}}" class="userinfo_nickname">未登录</text>
+      <text class="username" wx:if="{{nickName&&login}}">{{nickName}}</text>
+    </view>
+  </view>
+
+  <!-- Stats Section -->
+  <view class="stats-container">
+    <view class="stat-item">
+      <text class="stat-value">30</text>
+      <text class="stat-label">积分</text>
+    </view>
+    <view class="stat-divider"></view>
+    <view class="stat-item">
+      <text class="stat-value">0</text>
+      <text class="stat-label">卡券</text>
+    </view>
+  </view>
+
+ 
+</view>
+
+<!--  -->
+<view class="container">
+  <view class="card-container">
+    <!-- 大卡片 -->
+    <view class="card large" bindtap="enter1" >
+      <view class="tag">新鲜竹林鸡</view>
+      <view class="icon-container">
+        <image src="/images/chicken/3.jpg" mode="widthFix" />
+      </view>
+      <view class="title">预订</view>
+      <view class="subtitle">即刻点单免排队</view>
+    </view>
+    
+    <!-- 小卡片容器 -->
+    <view class="small-cards">
+      <!-- 行撞鸡得卡片 -->
+      <view class="card small" bindtap="enter2" >
+        <view class="icon-container">
+          <image src="/images/chicken/2.jpg" mode="widthFix" />
+        </view>
+        <view class="title">行擅鸡得</view>
+      </view>
+      
+      <!-- 奖品兑换卡片 -->
+      <view class="card small">
+        <view class="icon-container" bindtap="enter3" >
+          <image src="/images/chicken/1.jpg" mode="widthFix" />
+        </view>
+        <view class="title">奖品兑换</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- index.wxml -->
+<view class="border-box">
+  <view class="button-container">
+    <view class="image-button">
+      <image src="/images/common/gift.png" class="image" mode="widthFix" />
+      <view class="word">入群有礼</view>
+    </view>
+    <view class="image-button">
+      <image src="/images/common/roll.png" class="image" mode="widthFix" />
+      <view class="word">领卷中心</view>
+    </view>
+    <view class="image-button">
+      <image src="/images/common/bamboo.png" class="image" mode="widthFix" />
+      <view class="word">积分抽奖</view>
+    </view>
+    <view class="image-button" bindtap="go4">
+      <image src="/images/common/leg.png" class="image" mode="widthFix" />
+      <view class="word">活动中心</view>
+    </view>
+  </view>
+</view>
+
+
+
+
+
