@@ -1,0 +1,24 @@
+<!--pages/index2/index2.wxml-->
+<view class="container">
+  <button bind:tap="getStepData" class="receive-button">点击获取步数</button>
+</view>
+
+<view class="container">
+  <view class="rank-title">微信步数排行榜</view>
+  
+  <view class="my-rank">
+    <image class="avatar" src="{{myself.avatarUrl}}" />
+    <text class="my-nickname">{{myself.nickName}}的排名: {{myself.ranking}} ({{myself.stepNumber}}步)</text>
+  </view>
+
+  <view class="rank-list">
+    <block wx:for="{{stepNumberList}}" wx:key="ranking">
+      <view class="rank-item">
+        <image class="avatar" src="{{item.avatarUrl}}" />
+        <text>{{item.ranking}}. {{item.nickName}}: {{item.stepNumber}} 步</text>
+      </view>
+    </block>
+  </view>
+</view>
+
+ 
