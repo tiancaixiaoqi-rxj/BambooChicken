@@ -1,0 +1,22 @@
+<view class="modal" wx:if="{{isVisible}}">
+    <view class="modal-content">
+        <view class="form-item">
+            <text>收货人:</text>
+            <input type="text" bindinput="inputName" placeholder="请输入收货人姓名" />
+        </view>
+        <view class="form-item">
+            <text>电话:</text>
+            <input type="text" bindinput="inputPhone" placeholder="请输入联系电话" />
+        </view>
+        <view class="form-item">
+            <text>地点:</text>
+            <input type="text" bindinput="inputAddress" placeholder="请输入收货地址" />
+        </view>
+        <view class="form-item">
+            <text>备注:</text>
+            <input type="text" bindinput="inputNote" placeholder="请填写备注" />
+        </view>
+        <button bindtap="handleSubmit" class="submit">确认</button>
+        <button bindtap="handleClose" class="close">取消</button>
+    </view>
+</view>
