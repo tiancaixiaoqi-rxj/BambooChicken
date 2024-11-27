@@ -1,0 +1,158 @@
+.about {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 1500rpx;
+  width: 100%;
+}
+
+.about .content {
+  background-color: #fff;
+  height: 700rpx;
+  width: 90%;
+  border-radius: 30rpx;
+  margin: 0 auto;
+  margin-top: 220rpx;
+  text-align: center;
+}
+
+.about .content .img image {
+  width: 150rpx;
+  height: 150rpx;
+  margin-top: 50rpx;
+}
+
+.about .content .font {
+  font-weight: bold;
+  font-size: 40rpx;
+}
+
+.about .content .font1 {
+  color: #919191;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+}
+
+
+.menu-container image {
+  align-self: center;
+  width: 35rpx;
+  height: 35rpx;
+}
+
+
+
+
+/* 按钮样式 */
+.button {
+  background: linear-gradient(90deg, #4CAF50, #8BC34A); 
+  color: white; 
+  border: none; 
+  border-radius: 25px; 
+  padding: 12px 30px;
+  font-size: 16px; 
+  font-weight: bold; 
+  text-align: center; 
+  transition: background 0.3s ease, transform 0.2s; 
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+	position: absolute;
+  top: 90%;
+  left: 34%;
+}
+
+.button:hover {
+  background: linear-gradient(90deg, #45a049, #7cb342); 
+  transform: scale(1.05); 
+}
+
+.button:active {
+  transform: scale(0.95); 
+}
+
+/*new*/
+.user-profile {
+  background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%);
+  min-height: 80vh;
+  padding: 40rpx 30rpx;
+}
+.header {
+  width: 100%;
+  display: flex;
+  padding: 30rpx 55rpx;
+  align-items: center;
+  background: #fff7ae;
+}
+
+.userinfo_avatar {
+  border-radius: 128rpx;
+  width: 128rpx;
+  height: 128rpx;
+  margin-right: 30rpx;
+}
+
+.userinfo_nickname {
+  font-size: 36rpx;
+  margin-bottom: 5rpx;
+}
+
+.tuichu {
+  font-size: 30rpx;
+  color: gray;
+}
+
+
+/***/
+/* Menu Section */
+.menu-container {
+  background: #ffffff;
+  border-radius: 20rpx;
+  padding: 10rpx 0;
+  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.05);
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 30rpx;
+  position: relative;
+}
+
+.menu-item:active {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.menu-item::after {
+  content: '';
+  position: absolute;
+  left: 30rpx;
+  right: 30rpx;
+  bottom: 0;
+  height: 1rpx;
+  background: #f0f0f0;
+}
+
+.menu-item:last-child::after {
+  display: none;
+}
+
+.menu-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-text {
+  flex: 1;
+  font-size: 30rpx;
+  color: #333333;
+}
+
+.menu-arrow {
+  width: 16rpx;
+  height: 16rpx;
+  border-top: 4rpx solid #cccccc;
+  border-right: 4rpx solid #cccccc;
+  transform: rotate(45deg);
+}
