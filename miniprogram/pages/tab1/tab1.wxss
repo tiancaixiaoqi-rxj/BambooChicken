@@ -1,0 +1,233 @@
+/* 1 */
+.swiper-container {
+  height: 500rpx; /* 设置轮播图固定高度 */
+}
+.swip {
+  box-shadow: 4rpx 4rpx 8rpx rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  height: 465rpx;
+  width: 650rpx;
+  margin-top: 10rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.swip image {
+  width: 100%;
+}
+/*1*/
+
+/* Base Styles */
+.user-profile {
+  background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%);
+  min-height: 28vh;
+  padding: 30rpx 28rpx;
+}
+
+/* Header Section */
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40rpx;
+  padding: 20rpx;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20rpx;
+  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.05);
+}
+
+.avatar-container {
+  position: relative;
+  margin-right: 30rpx;
+}
+
+.avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+  border: 4rpx solid #ffffff;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+  flex: 1;
+}
+
+.username {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 8rpx;
+  display: block;
+}
+
+/* Stats Section */
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #ffffff;
+  padding: 14rpx;
+  border-radius: 20rpx;
+  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.05);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-value {
+  font-size: 40rpx;
+  font-weight: 600;
+  color: #4CAF50;
+  margin-bottom: 8rpx;
+}
+
+.stat-label {
+  font-size: 26rpx;
+  color: #666666;
+}
+
+.stat-divider {
+  width: 2rpx;
+  height: 50rpx;
+  background: #0e0c0c;
+}
+
+/* 2 */
+.box-model {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: space-around; 
+  width: 100%; 
+  padding: 10rpx; 
+  background-color: #f0f0f0; 
+}
+
+.item {
+  width: 80%; 
+  padding: 10rpx; 
+  margin: 5rpx 0; 
+  background-color: #ffffff; 
+  border-radius: 10rpx; 
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.container {
+  padding: 20rpx;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+  max-width: 1200rpx;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #7AB587;
+  border-radius: 20rpx;
+  padding: 34rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+
+.large {
+  height: 260rpx;
+  justify-content: space-between;
+}
+
+.small-cards {
+  display: flex;
+  gap: 20rpx;
+}
+
+.small {
+  flex: 1;
+  height: 140rpx;
+}
+
+.tag {
+  background-color: #F4A460;
+  color: white;
+  padding: 2rpx 10rpx;
+  border-radius: 20rpx;
+  font-size: 28rpx;
+  margin-bottom: 20rpx;
+}
+
+.icon-container {
+  width: 132rpx;
+  height: 135rpx;
+  background-color: #F9E5B0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.title {
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-top: 16rpx;
+}
+
+.subtitle {
+  font-size: 26rpx;
+  opacity: 0.8;
+}
+
+.small .icon-container {
+  width: 90rpx;
+  height: 90rpx;
+}
+
+
+.small .title {
+  font-size: 32rpx;
+}
+
+/**/
+.border-box {
+  border: 2px solid #ffffff; /* 设置边框宽度、样式和颜色 */
+  width: 640rpx; /* 设置宽度 */
+  height: 150rpx; /* 设置高度 */
+  margin: 20rpx auto; /* 设置外边距，使长方形居中显示 */
+  background-color: #ffffff; /* 设置背景颜色 */
+  border-radius: 20rpx; /* 设置圆角的半径 */
+  display: flex; /* 使用 Flexbox 布局 */
+  justify-content: space-between; /* 平均分配按钮的空隙 */
+  align-items: center; /* 垂直居中对齐 */
+  padding: 10rpx; /* 内边距 */
+}
+
+.button-container {
+  display: flex; /* 使用 Flexbox 布局 */
+  width: 100%; /* 容器宽度占满盒子 */
+}
+
+.image-button {
+  flex: 1; /* 平均分配按钮的宽度 */
+  margin: 0 8rpx; /* 按钮之间的间距 */
+  text-align: center; /* 文本居中对齐 */
+}
+
+.image {
+  width: 65%; /* 图片宽度占满按钮 */
+  border-radius: 10rpx; /* 图片圆角 */
+}
+
+.word {
+  font-size: 15px; /* 设置文字大小为15像素 */
+}
+
+/*分割线*/
+
