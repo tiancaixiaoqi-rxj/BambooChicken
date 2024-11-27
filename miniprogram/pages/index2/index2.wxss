@@ -1,0 +1,60 @@
+.container {
+  padding: 26rpx;
+}
+
+/* 按钮样式 */
+.receive-button {
+  background: linear-gradient(90deg, #4CAF50, #8BC34A); 
+  color: white; 
+  border: none; 
+  border-radius: 25px; 
+  padding: 12px 30px;
+  font-size: 16px; 
+  font-weight: bold; 
+  text-align: center; 
+  transition: background 0.3s ease, transform 0.2s; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.receive-button:hover {
+  background: linear-gradient(90deg, #45a049, #7cb342); 
+  transform: scale(1.05); 
+}
+
+.receive-button:active {
+  transform: scale(0.95); 
+}
+
+/*排行榜*/
+.rank-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+.my-rank {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.rank-list {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+.rank-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+.rank-item:last-child {
+  border-bottom: none;
+}
+
+.my-nickname{
+	margin-right: 80rpx;
+}
