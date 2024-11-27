@@ -1,0 +1,43 @@
+<!--pages/my-activity/my-activity.wxml-->
+<view class="container">
+  <view class="title">活动信息</view>
+
+	<!-- #收集信息 -->
+
+
+  <view class="activity-list">
+    <block wx:for="{{activities}}" wx:key="{{item.id}}">
+      <view class="card">
+			<view class="card-content">
+				<view class="activity-info">
+					<text class="activity-title">{{item.name}}</text>
+					<text class="activity-description">{{item.description}}</text>
+				</view>
+				<image class="activity-image" src="{{item.image}}" wx:if="{{item.image}}" mode="aspectFill"></image>
+			</view>
+			<view>
+			<button bind:tap="receive" class="receive-button" id="{{item.id}}">点击领取</button>
+			<user-modal isVisible="{{isVisible}}" bind:submit="handleChildSubmit" ></user-modal>
+			</view>
+</view>
+    </block>
+  </view>
+</view>
+
+
+
+<!-- <view>
+			<button bind:tap="receive" class="receive-button" id="{{item.id}}">点击领取</button>
+			<user-modal isVisible="{{isVisible}}" bind:submit="handleChildSubmit" ></user-modal>
+			</view>
+
+			<button bind:tap="co" class="receive-button" id="{{item.id}}">点击领取</button>
+			<text>{{recipientName}}</text> -->
+
+
+
+
+
+  
+
+
