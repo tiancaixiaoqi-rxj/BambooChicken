@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="form">
+    <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+      <image class="avatar" src="{{avatarUrl}}"></image>
+    </button>
+    <view class="avatar-text">点击上方选择头像</view>
+		<input type="text" bindinput="onInputNickName" value="{{nickName}}" />
+    <button class="login-btn" bindtap="remain" >保存</button>
+  </view>
+</view>
